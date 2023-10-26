@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    </script>
+    <script>
+        //mouse enter used when we point to the html element
+        //mouse leave used when we want to leave that page
+        //mouse down used when we press on the left,right and middle on html elements
+        //mouse up used when we release from html elements 
+        //hover is used for both mouse enter and leave events
+        $(document).ready(function(){
+            $("p").hover(function(){
+                alert("You entered p now!");
+            },
+            function(){
+                alert("you may leave now")
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>This is mouse Leave event</p>
+</body>
+</html>

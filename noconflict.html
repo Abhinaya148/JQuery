@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+</script>
+<script>
+    //var jq=$.noConflict();
+    $.noConflict();
+    jQuery(document).ready(function(){
+        jQuery("button").click(function(){
+            jQuery("p").text("jQuery is still working!");
+        });
+    });
+    /* 
+    $.noConflict();
+    jQuery(document).ready(function($){
+        $("button").click(function(){
+            $("p").text("jQuery is still working!");
+        });
+    });
+    */
+</script>
+</head>
+<body>
+    <p>This is a paragraph</p>
+    <button>Test jquery</button>
+</body>
+</html>

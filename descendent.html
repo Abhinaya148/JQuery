@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+</script>
+<script>
+    $(document).ready(function(){
+        $("div").children().css({"color":"red","border":"2px solid red"});
+        //$("div").find("span").css({"color":"green","border":"2px solid green"});
+    });
+</script>
+<style>
+    .descendant * {
+        display: block;
+        border: 2px solid blueviolet;
+        color: blueviolet;
+        padding: 5px;
+        margin: 15px;
+    }
+</style>
+</head>
+<body>
+    <div class="descendant" style="width: 500px;">father
+    <p>Son
+        <span>child</span>
+    </p>
+<p> Son
+    <span>child</span>
+</p></div>
+</body>
+</html>

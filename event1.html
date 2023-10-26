@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    </script>
+    <script>
+        //click is used when the user clicks on that the data will hide
+        //dblclick is used when the user double clicks, the data will hide
+        $(document).ready(function(){
+            $("p").dblclick(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+     <script>
+        //click is used when the user clicks on that the data will hide
+        //dblclick is used when the user double clicks, the data will hide
+        $(document).ready(function(){
+            $("h3").on("click",function(){
+                $(this).hide();
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <h3>Welcome to jquery</h3>
+    <h3>Hello world!</h3>
+    <p> click this to hide</p>
+    <p>Click it too </p>
+</body>
+</html>

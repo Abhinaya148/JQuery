@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+</script>
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("img").before("<b>Before</b>");
+        });
+        $("#btn2").click(function(){
+            $("img").after("<i>After</i>");
+        });
+    });
+</script>
+</head>
+<body>
+    <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=1024x1024&w=is&k=20&c=MB1-O5fjps0hVPd97fMIiEaisPMEn4XqVvQoJFKLRrQ=" alt="Image of nature" width="300" height="300">
+    <br>
+    <br>
+    <button id="btn1">Before</button>
+    <button id="btn2">After</button>
+</body>
+</html>
